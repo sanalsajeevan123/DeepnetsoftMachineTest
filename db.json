@@ -1,7 +1,52 @@
 {
     "categories": [
-      { "id": 1, "title": "Category 1" },
-      { "id": 2, "title": "Category 2" },
-      { "id": 3, "title": "Category 3" }
+      {"id":1, "name":"Mobiles, Computers",
+        "categories":[
+            {"id":10,"name":"All Mobile Phones",
+            "categories":[
+                {"id":100,"name":"Smart Phones",
+                "products":[
+                    {"id":1000,"name":"Smart phone 1"},
+                    {"id":1001,"name":"Smart phone 2"},
+                    {"id":1002,"name":"Smart phone 3"}
+                ]},
+                {"id":101,"name":"Basic Phones",
+                "products":[
+                    {"id":1010,"name":"Basic phone 1"},
+                    {"id":1011,"name":"Basic phone 2"},
+                    {"id":1012,"name":"Basic phone 3"}
+                ]},
+                {"id":102,"name":"Android Phones",
+                "products":[
+                    {"id":1020,"name":"Android phone 1"},
+                    {"id":1021,"name":"Android phone 2"},
+                    {"id":1022,"name":"Android phone 3"},
+                    {"id":1023,"name":"Android phone 4"},
+                    {"id":1024,"name":"Android phone 5"},
+                    {"id":1025,"name":"Android phone 6"}
+                ]}
+            ]
+        },
+            {"id":11,"name":"All Mobile Accessories"},
+            {"id":12,"name":"Cases Covers"},
+            {"id":13,"name":"All Computers"}
+        ]
+    },
+      {"id":2, "name":"TV, Applications, Electronics",
+      "categories":[
+            {"id":20,"name":"All Mobile Phones"},
+            {"id":21,"name":"All Mobile Accessories"},
+            {"id":22,"name":"Cases Covers"},
+            {"id":23,"name":"All Computers"}
+        ]
+    },
+      {"id":3, "name":"Mens Fashion",
+      "categories":[
+            {"id":30,"name":"All Mobile Phones"},
+            {"id":31,"name":"All Mobile Accessories"},
+            {"id":32,"name":"Cases Covers"},
+            {"id":33,"name":"All Computers"}
+        ]
+    }
     ]
   }
