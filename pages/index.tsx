@@ -11,10 +11,20 @@ const Home: NextPage = () => {
   const [selectedCategory,setSelectedCategory] = useState("")
   const [totalProducts,setTotalProducts] = useState(0)
 
-  let tempPrdtList:any = productList
-
   useEffect(()=>{
-    let addProducts:any = []
+    let tempPrdtList:any = [...productList]
+
+    const handleProductList=(category:any)=>{
+      category.map((category:any)=>{
+        if(category.categories){
+          handleProductList(category.categories)
+        }else if(category.products){
+          tempPrdtList = [...tempPrdtList,...category.products]
+        }
+      })
+      return tempPrdtList
+    }
+
     fetch(`https://my-json-server.typicode.com/sanalsajeevan123/DeepnetsoftMachineTest/categories`)
     .then(res => res.json())
     .then(result =>{
@@ -24,11 +34,10 @@ const Home: NextPage = () => {
       result.map((category:any)=>{
         productCount+=category.totalProducts
         if(category.categories){
-          let prdts = handleProductList(category.categories)
-          addProducts = [...addProducts,...prdts]
+          handleProductList(category.categories)
         }
       })
-      setProductList(addProducts)
+      setProductList(tempPrdtList)
       setTotalProducts(productCount)
       setCategories(result)
     })
@@ -37,16 +46,6 @@ const Home: NextPage = () => {
     })
   },[])
 
-  const handleProductList=(category:any)=>{
-    category.map((category:any)=>{
-      if(category.categories){
-        handleProductList(category.categories)
-      }else if(category.products){
-        tempPrdtList = [...tempPrdtList,...category.products]
-      }
-    })
-    return tempPrdtList
-  }
 
   const handleCategorySelect=(category:any)=>{
     setCategories(category.categories ?? [])

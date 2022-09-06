@@ -18,29 +18,15 @@ console.log(props.productList)
           </tr>
         </thead>
         <tbody>
-          {props.categories && props.categories.map((category:any,key:any)=>{
-            if(category.products){
-              return(
-                category.products.map((product:any,prdtKey:any)=>{
-                  return(
-                    <tr key={prdtKey}>
-                      <td className='border-r border-gray-400 text-center'><input type="checkbox" name="prdtCheckboxHead" id="prdtCheckboxHead" /></td>
-                      <td className='border-r border-gray-400 text-left px-1'><h1></h1></td>
-                      <td className='text-left px-1'><h1></h1></td>
-                  </tr>
-                  )
-                })
-              )
-            }
-            // else if(){
-
-            // }
+          {props.productList && props.productList.map((prdt:any,key:any)=>{
+            return(
+              <tr key={prdt.id}>
+                <td className='border-r border-gray-400 text-center'><input type="checkbox" name="prdtCheckboxHead" id="prdtCheckboxHead" /></td>
+                <td className='border-r border-gray-400 text-left px-1'><h1>{prdt.name}</h1></td>
+                <td className='text-left px-1'><h1>{prdt.price}</h1></td>
+              </tr>
+            )
           })}
-          <tr>
-            <td className='border-r border-gray-400 text-center'><input type="checkbox" name="prdtCheckboxHead" id="prdtCheckboxHead" /></td>
-            <td className='border-r border-gray-400 text-left px-1'><h1></h1></td>
-            <td className='text-left px-1'><h1></h1></td>
-          </tr>
         </tbody>
       </table>
     </div>
