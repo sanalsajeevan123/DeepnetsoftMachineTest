@@ -80,7 +80,7 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div className='w-full flex flex-col justify-center py-5 space-y-5'>
+    <div className='w-full flex flex-col justify-center py-5'>
       <div className='space-y-2'>
         <h1 className='font-bold text-lg'>{}</h1>
         <CategoryListing
