@@ -1,147 +1,211 @@
 {
     "categories": [
-      {
-        "id":1, 
-        "name":"Mobiles, Computers",
-        "categories":[
-            {
-                "id":10,
-                "name":"All Mobile Phones",
-                "categories":[
-                    {
-                        "id":100,
-                        "name":"Smart Phones",
-                        "products":[
-                            {
-                                "id":1000,"name":"Smart phone 1","price":"$50"
-                            },
-                            {
-                                "id":1001,"name":"Smart phone 2","price":"$50"
-                            },
-                            {
-                                "id":1002,"name":"Smart phone 3","price":"$50"
-                            }
-                        ],
-                        "totalProducts":3
-                    },
-                    {
-                        "id":101,
-                        "name":"Basic Phones",
-                        "products":[
-                            {
-                                "id":1010,"name":"Basic phone 1","price":"$50"
-                            },
-                            {
-                                "id":1011,"name":"Basic phone 2","price":"$50"
-                            },
-                            {
-                                "id":1012,"name":"Basic phone 3","price":"$50"
-                            }
-                        ],
-                        "totalProducts":3
-                    },
-                    {
-                        "id":102,
-                        "name":"Android Phones",
-                        "products":[
-                            {
-                                "id":1020,
-                                "name":"Android phone 1","price":"$50"
-                            },
-                            {
-                                "id":1021,
-                                "name":"Android phone 2","price":"$50"
-                            },
-                            {
-                                "id":1022,
-                                "name":"Android phone 3","price":"$50"
-                            },
-                            {
-                                "id":1023,
-                                "name":"Android phone 4","price":"$50"
-                            },
-                            {
-                                "id":1024,
-                                "name":"Android phone 5","price":"$50"
-                            },
-                            {
-                                "id":1025,
-                                "name":"Android phone 6","price":"$50"
-                            }
-                        ],
-                        "totalProducts":6    
-                    }
-                ],
-                "totalProducts":12
-            },
-            {
-                "id":11,
-                "name":"All Mobile Accessories",
-                "products":[
-                    {
-                        "id":1110,"name":"Accessories 1","price":"$50"
-                    },
-                    {
-                        "id":1111,"name":"Accessories 2","price":"$50"
-                    },
-                    {
-                        "id":1112,"name":"Accessories 3","price":"$50"
-                    }
-                ],
-                "totalProducts":3
-            },
-            {
-                "id":12,
-                "name":"Cases Covers",
-                "products":[
-                    {
-                        "id":1210,"name":"Cases Cover 1","price":"$50"
-                    },
-                    {
-                        "id":1211,"name":"Cases Cover 2","price":"$50"
-                    },
-                    {
-                        "id":1212,"name":"Cases Cover 3","price":"$50"
-                    }
-                ],
-                "totalProducts":3
-            },
-            {
-                "id":13,
-                "name":"All Computers",
-                "products":[
-                    {
-                        "id":1310,"name":"Computer 1","price":"$50"
-                    },
-                    {
-                        "id":1311,"name":"Computer 2","price":"$50"
-                    },
-                    {
-                        "id":1312,"name":"Computer 3","price":"$50"
-                    }
-                ],
-                "totalProducts":3
-            }
-        ],
-        "totalProducts":21
-    },
-      {"id":2, "name":"TV, Applications, Electronics",
-      "categories":[
-            {"id":20,"name":"All Mobile Phones"},
-            {"id":21,"name":"All Mobile Accessories"},
-            {"id":22,"name":"Cases Covers"},
-            {"id":23,"name":"All Computers"}
-        ],
-        "totalProducts":0
-    },
-      {"id":3, "name":"Mens Fashion",
-      "categories":[
-            {"id":30,"name":"All Mobile Phones"},
-            {"id":31,"name":"All Mobile Accessories"},
-            {"id":32,"name":"Cases Covers"},
-            {"id":33,"name":"All Computers"}
-        ],
-        "totalProducts":0
-    }
+        {
+            "id":1, 
+            "name":"Mobiles, Computers",
+            "categories":[
+                {
+                    "id":10,
+                    "name":"All Mobile Phones",
+                    "categories":[
+                        {
+                            "id":100,
+                            "name":"Smart Phones",
+                            "products":[
+                                {
+                                    "id":1000,"name":"Smart phone 1","price":"$50"
+                                },
+                                {
+                                    "id":1001,"name":"Smart phone 2","price":"$50"
+                                },
+                                {
+                                    "id":1002,"name":"Smart phone 3","price":"$50"
+                                }
+                            ],
+                            "totalProducts":3
+                        },
+                        {
+                            "id":101,
+                            "name":"Basic Phones",
+                            "products":[
+                                {
+                                    "id":1010,"name":"Basic phone 1","price":"$50"
+                                },
+                                {
+                                    "id":1011,"name":"Basic phone 2","price":"$50"
+                                },
+                                {
+                                    "id":1012,"name":"Basic phone 3","price":"$50"
+                                }
+                            ],
+                            "totalProducts":3
+                        },
+                        {
+                            "id":102,
+                            "name":"Android Phones",
+                            "products":[
+                                {
+                                    "id":1020,
+                                    "name":"Android phone 1","price":"$50"
+                                },
+                                {
+                                    "id":1021,
+                                    "name":"Android phone 2","price":"$50"
+                                },
+                                {
+                                    "id":1022,
+                                    "name":"Android phone 3","price":"$50"
+                                },
+                                {
+                                    "id":1023,
+                                    "name":"Android phone 4","price":"$50"
+                                },
+                                {
+                                    "id":1024,
+                                    "name":"Android phone 5","price":"$50"
+                                },
+                                {
+                                    "id":1025,
+                                    "name":"Android phone 6","price":"$50"
+                                }
+                            ],
+                            "totalProducts":6    
+                        }
+                    ],
+                    "totalProducts":12
+                },
+                {
+                    "id":11,
+                    "name":"All Mobile Accessories",
+                    "products":[
+                        {
+                            "id":1110,"name":"Accessories 1","price":"$50"
+                        },
+                        {
+                            "id":1111,"name":"Accessories 2","price":"$50"
+                        },
+                        {
+                            "id":1112,"name":"Accessories 3","price":"$50"
+                        }
+                    ],
+                    "totalProducts":3
+                },
+                {
+                    "id":12,
+                    "name":"Cases Covers",
+                    "products":[
+                        {
+                            "id":1210,"name":"Cases Cover 1","price":"$50"
+                        },
+                        {
+                            "id":1211,"name":"Cases Cover 2","price":"$50"
+                        },
+                        {
+                            "id":1212,"name":"Cases Cover 3","price":"$50"
+                        }
+                    ],
+                    "totalProducts":3
+                },
+                {
+                    "id":13,
+                    "name":"All Computers",
+                    "products":[
+                        {
+                            "id":1310,"name":"Computer 1","price":"$50"
+                        },
+                        {
+                            "id":1311,"name":"Computer 2","price":"$50"
+                        },
+                        {
+                            "id":1312,"name":"Computer 3","price":"$50"
+                        }
+                    ],
+                    "totalProducts":3
+                }
+            ],
+            "totalProducts":21
+        },
+        {
+            "id":2, 
+            "name":"TV, Applications, Electronics",
+            "categories":[
+                {
+                    "id":20,
+                    "name":"All TV",
+                    "products":[
+                        {
+                            "id":1000,"name":"TV 1","price":"$50"
+                        },
+                        {
+                            "id":1001,"name":"TV 2","price":"$50"
+                        },
+                        {
+                            "id":1002,"name":"TV 3","price":"$50"
+                        }
+                    ],
+                    "totalProducts":3
+                },
+                {
+                    "id":21,
+                    "name":"All Applications",
+                    "products":[
+                        {
+                            "id":1000,"name":"Applications 1","price":"$50"
+                        },
+                        {
+                            "id":1001,"name":"Applications 2","price":"$50"
+                        },
+                        {
+                            "id":1002,"name":"Applications 3","price":"$50"
+                        }
+                    ],
+                    "totalProducts":3
+                        },
+                {
+                    "id":22,
+                    "name":"All Electronics",
+                    "products":[
+                        {
+                            "id":1000,"name":"Electronics 1","price":"$50"
+                        },
+                        {
+                            "id":1001,"name":"Electronics 2","price":"$50"
+                        },
+                        {
+                            "id":1002,"name":"Electronics 3","price":"$50"
+                        }
+                    ],
+                    "totalProducts":3
+                        },
+                {
+                    "id":23,
+                    "name":"All Computers",
+                    "products":[
+                        {
+                            "id":1000,"name":"All Computers 1","price":"$50"
+                        },
+                        {
+                            "id":1001,"name":"All Computers 2","price":"$50"
+                        },
+                        {
+                            "id":1002,"name":"All Computers 3","price":"$50"
+                        }
+                    ],
+                    "totalProducts":3
+                }
+            ],
+            "totalProducts":9
+        },
+        {
+            "id":3, 
+            "name":"Mens Fashion",
+            "categories":[
+                {"id":30,"name":"All Mobile Phones"},
+                {"id":31,"name":"All Mobile Accessories"},
+                {"id":32,"name":"Cases Covers"},
+                {"id":33,"name":"All Computers"}
+            ],
+            "totalProducts":0
+        }
     ]
   }

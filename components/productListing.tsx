@@ -19,7 +19,7 @@ const ProductListing = (props:MyProps) => {
         <tbody>
           {props.productList.map((prdt:any,key:any)=>{
             return(
-              <tr key={prdt.id}>
+              <tr key={key}>
                 <td className='border-r border-gray-400 text-center'><input type="checkbox" name="prdtCheckboxBody" id="prdtCheckboxBody" /></td>
                 <td className='border-r border-gray-400 text-left px-1'><h1>{prdt.name}</h1></td>
                 <td className='text-left px-1'><h1>{prdt.price}</h1></td>
