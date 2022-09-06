@@ -1,42 +1,91 @@
 {
     "categories": [
-      {"id":1, "name":"Mobiles, Computers",
+      {
+        "id":1, 
+        "name":"Mobiles, Computers",
         "categories":[
-            {"id":10,"name":"All Mobile Phones",
+            {
+                "id":10,
+                "name":"All Mobile Phones",
                 "categories":[
-                    {"id":100,"name":"Smart Phones",
-                    "products":[
-                        {"id":1000,"name":"Smart phone 1"},
-                        {"id":1001,"name":"Smart phone 2"},
-                        {"id":1002,"name":"Smart phone 3"}
-                    ],
-                    "totalProducts":3
+                    {
+                        "id":100,
+                        "name":"Smart Phones",
+                        "products":[
+                            {
+                                "id":1000,"name":"Smart phone 1"
+                            },
+                            {
+                                "id":1001,"name":"Smart phone 2"
+                            },
+                            {
+                                "id":1002,"name":"Smart phone 3"
+                            }
+                        ],
+                        "totalProducts":3
                     },
-                    {"id":101,"name":"Basic Phones",
-                    "products":[
-                        {"id":1010,"name":"Basic phone 1"},
-                        {"id":1011,"name":"Basic phone 2"},
-                        {"id":1012,"name":"Basic phone 3"}
-                    ],
-                    "totalProducts":3
+                    {
+                        "id":101,
+                        "name":"Basic Phones",
+                        "products":[
+                            {
+                                "id":1010,"name":"Basic phone 1"
+                            },
+                            {
+                                "id":1011,"name":"Basic phone 2"
+                            },
+                            {
+                                "id":1012,"name":"Basic phone 3"
+                            }
+                        ],
+                        "totalProducts":3
                     },
-                    {"id":102,"name":"Android Phones",
-                    "products":[
-                        {"id":1020,"name":"Android phone 1"},
-                        {"id":1021,"name":"Android phone 2"},
-                        {"id":1022,"name":"Android phone 3"},
-                        {"id":1023,"name":"Android phone 4"},
-                        {"id":1024,"name":"Android phone 5"},
-                        {"id":1025,"name":"Android phone 6"}
-                    ],
-                    "totalProducts":6    
+                    {
+                        "id":102,
+                        "name":"Android Phones",
+                        "products":[
+                            {
+                                "id":1020,
+                                "name":"Android phone 1"
+                            },
+                            {
+                                "id":1021,
+                                "name":"Android phone 2"
+                            },
+                            {
+                                "id":1022,
+                                "name":"Android phone 3"
+                            },
+                            {
+                                "id":1023,
+                                "name":"Android phone 4"
+                            },
+                            {
+                                "id":1024,
+                                "name":"Android phone 5"
+                            },
+                            {
+                                "id":1025,
+                                "name":"Android phone 6"
+                            }
+                        ],
+                        "totalProducts":6    
                     }
                 ],
                 "totalProducts":12
             },
-            {"id":11,"name":"All Mobile Accessories"},
-            {"id":12,"name":"Cases Covers"},
-            {"id":13,"name":"All Computers"}
+            {
+                "id":11,
+                "name":"All Mobile Accessories"
+            },
+            {
+                "id":12,
+                "name":"Cases Covers"
+            },
+            {
+                "id":13,
+                "name":"All Computers"
+            }
         ],
         "totalProducts":12
     },
