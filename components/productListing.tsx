@@ -1,12 +1,10 @@
-import { useState } from 'react'
-
+import React from 'react'
 type MyProps = {
   categories:{[x:string]:any}[]
   productList:{[x:string]:any}[]
 }
 
 const ProductListing = (props:MyProps) => {
-console.log(props.productList)
   return (
     <div className='w-full flex justify-center py-5 space-y-5'>
       <table className='min-w-max border border-gray-400 w-60'>
@@ -21,7 +19,7 @@ console.log(props.productList)
           {props.productList && props.productList.map((prdt:any,key:any)=>{
             return(
               <tr key={prdt.id}>
-                <td className='border-r border-gray-400 text-center'><input type="checkbox" name="prdtCheckboxHead" id="prdtCheckboxHead" /></td>
+                <td className='border-r border-gray-400 text-center'><input type="checkbox" name="prdtCheckboxBody" id="prdtCheckboxBody" /></td>
                 <td className='border-r border-gray-400 text-left px-1'><h1>{prdt.name}</h1></td>
                 <td className='text-left px-1'><h1>{prdt.price}</h1></td>
               </tr>

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   const [totalProducts,setTotalProducts] = useState(0)
 
   useEffect(()=>{
-    let tempPrdtList:any = [...productList]
+    let tempPrdtList:any = []
 
     const handleProductList=(category:any)=>{
       category.map((category:any)=>{
@@ -22,7 +22,6 @@ const Home: NextPage = () => {
           tempPrdtList = [...tempPrdtList,...category.products]
         }
       })
-      return tempPrdtList
     }
 
     fetch(`https://my-json-server.typicode.com/sanalsajeevan123/DeepnetsoftMachineTest/categories`)
@@ -32,13 +31,13 @@ const Home: NextPage = () => {
       setAllDetails(result)
       let productCount:number = 0
       result.map((category:any)=>{
-        productCount+=category.totalProducts
+        // productCount+=category.totalProducts
         if(category.categories){
           handleProductList(category.categories)
         }
       })
       setProductList(tempPrdtList)
-      setTotalProducts(productCount)
+      // setTotalProducts(productCount)
       setCategories(result)
     })
     .catch((err:any)=>{
@@ -46,9 +45,37 @@ const Home: NextPage = () => {
     })
   },[])
 
+  useEffect(()=>{
+    if(categories.length > 0){
+
+      let tempPrdtList:any = []
+
+      const handleProductList=(category:any)=>{
+        category.map((category:any)=>{
+          if(category.categories){
+            handleProductList(category.categories)
+          }else if(category.products){
+            tempPrdtList = [...tempPrdtList,...category.products]
+          }
+        })
+      }
+
+      categories.map((category:any)=>{
+        if(category.categories){
+          handleProductList(category.categories)
+        }else if(category.products){
+          tempPrdtList = [...tempPrdtList,...category.products]
+        }
+      })
+      setProductList(tempPrdtList)
+    }
+  },[selectedCategory])
+  
+
 
   const handleCategorySelect=(category:any)=>{
     setCategories(category.categories ?? [])
+    setProductList(category.products ?? [])
     setSelectedCategory(category.name)
   }
 
@@ -59,7 +86,7 @@ const Home: NextPage = () => {
         <CategoryListing
           selectedCategory={selectedCategory}
           categories={categories}
-          totalProducts={totalProducts}
+          totalProducts={productList.length}
           handleCategorySelect={handleCategorySelect}
         />
       </div>
