@@ -2,10 +2,11 @@ import { useState } from 'react'
 
 type MyProps = {
   categories:{[x:string]:any}[]
+  productList:{[x:string]:any}[]
 }
 
 const ProductListing = (props:MyProps) => {
-
+console.log(props.productList)
   return (
     <div className='w-full flex justify-center py-5 space-y-5'>
       <table className='min-w-max border border-gray-400 w-60'>

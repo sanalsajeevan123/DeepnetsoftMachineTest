@@ -14,10 +14,9 @@ const CategoryListing = (props:MyProps) => {
         <h1 className='font-bold text-lg min-w-max px-3 text-center'>{`${props.selectedCategory === "" ? `Categories ` : `${props.selectedCategory} ` } (${props.totalProducts})`}</h1>
         <div className='min-w-max border border-gray-400 max-h-96 overflow-y-auto'>
             {props.categories && props.categories.map((category:any,key:any)=>{
-                console.log(category)
                 return(
                     <button onClick={()=>props.handleCategorySelect && props.handleCategorySelect(category)} className='w-full flex items-center text-sm space-x-4 py-2 px-4 hover:bg-blue-500 hover:text-white' key={category.id}>
-                        {`${category.name} (${category.totalProducts})`}
+                        {`${category.name} (${category.totalProducts ?? 0})`}
                     </button>
                 )
             })}
