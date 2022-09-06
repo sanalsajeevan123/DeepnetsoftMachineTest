@@ -7,8 +7,8 @@ const Home: NextPage = () => {
 
   const [allDetails,setAllDetails] = useState([])
   const [categories,setCategories] = useState([])
-  const [selectedCategoryId,setSelectedCategoryId] = useState(undefined)
   const [selectedCategory,setSelectedCategory] = useState("")
+  const [totalProducts,setTotalProducts] = useState(0)
 
   useEffect(()=>{
     fetch(`https://my-json-server.typicode.com/sanalsajeevan123/DeepnetsoftMachineTest/categories`)
@@ -16,12 +16,22 @@ const Home: NextPage = () => {
     .then(result =>{
       // console.log(result)
       setAllDetails(result)
+      let productCount:number = 0
+      result.map((category:any)=>{
+        productCount+=category.totalProducts
+      })
+      setTotalProducts(productCount)
       setCategories(result)
     })
     .catch((err:any)=>{
       console.log(err)
     })
   },[])
+
+  const handleCategorySelect=(category:any)=>{
+    setCategories(category.categories)
+    setSelectedCategory(category.name)
+  }
 
   return (
     <div className='w-full flex flex-col justify-center py-5 space-y-5'>
@@ -30,9 +40,13 @@ const Home: NextPage = () => {
         <CategoryListing
           selectedCategory={selectedCategory}
           categories={categories}
+          totalProducts={totalProducts}
+          handleCategorySelect={handleCategorySelect}
         />
       </div>
-      <ProductListing/>
+      <ProductListing
+        categories={categories}
+      />
     </div>
   )
 }
