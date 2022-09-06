@@ -79,13 +79,13 @@
                 "name":"All Mobile Accessories",
                 "products":[
                     {
-                        "id":1110,"name":"Basic phone 1","price":"$50"
+                        "id":1110,"name":"Accessories 1","price":"$50"
                     },
                     {
-                        "id":1111,"name":"Basic phone 2","price":"$50"
+                        "id":1111,"name":"Accessories 2","price":"$50"
                     },
                     {
-                        "id":1112,"name":"Basic phone 3","price":"$50"
+                        "id":1112,"name":"Accessories 3","price":"$50"
                     }
                 ],
                 "totalProducts":3
@@ -95,13 +95,13 @@
                 "name":"Cases Covers",
                 "products":[
                     {
-                        "id":1210,"name":"Basic phone 1","price":"$50"
+                        "id":1210,"name":"Cases Cover 1","price":"$50"
                     },
                     {
-                        "id":1211,"name":"Basic phone 2","price":"$50"
+                        "id":1211,"name":"Cases Cover 2","price":"$50"
                     },
                     {
-                        "id":1212,"name":"Basic phone 3","price":"$50"
+                        "id":1212,"name":"Cases Cover 3","price":"$50"
                     }
                 ],
                 "totalProducts":3
@@ -111,13 +111,13 @@
                 "name":"All Computers",
                 "products":[
                     {
-                        "id":1310,"name":"Basic phone 1","price":"$50"
+                        "id":1310,"name":"Computer 1","price":"$50"
                     },
                     {
-                        "id":1311,"name":"Basic phone 2","price":"$50"
+                        "id":1311,"name":"Computer 2","price":"$50"
                     },
                     {
-                        "id":1312,"name":"Basic phone 3","price":"$50"
+                        "id":1312,"name":"Computer 3","price":"$50"
                     }
                 ],
                 "totalProducts":3
