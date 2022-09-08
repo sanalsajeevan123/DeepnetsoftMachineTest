@@ -34,6 +34,8 @@ const Home: NextPage = () => {
         // productCount+=category.totalProducts
         if(category.categories){
           handleProductList(category.categories)
+        }else if(category.products){
+          tempPrdtList = [...tempPrdtList,...category.products]
         }
       })
       setProductList(tempPrdtList)
