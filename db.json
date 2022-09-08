@@ -199,13 +199,27 @@
         {
             "id":3, 
             "name":"Mens Fashion",
-            "categories":[
-                {"id":30,"name":"All Mobile Phones"},
-                {"id":31,"name":"All Mobile Accessories"},
-                {"id":32,"name":"Cases Covers"},
-                {"id":33,"name":"All Computers"}
+            "products":[
+                {
+                    "id":1000,"name":"Mens Fashion 1","price":"$50"
+                },
+                {
+                    "id":1001,"name":"Mens Fashion 2","price":"$50"
+                },
+                {
+                    "id":1002,"name":"Mens Fashion 3","price":"$50"
+                },
+                {
+                    "id":1000,"name":"Mens Fashion 4","price":"$50"
+                },
+                {
+                    "id":1001,"name":"Mens Fashion 5","price":"$50"
+                },
+                {
+                    "id":1002,"name":"Mens Fashion 6","price":"$50"
+                }
             ],
-            "totalProducts":0
+            "totalProducts":6
         }
     ]
   }
