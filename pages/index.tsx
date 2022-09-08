@@ -9,7 +9,6 @@ const Home: NextPage = () => {
   const [categories,setCategories] = useState([])
   const [productList,setProductList] = useState([])
   const [selectedCategory,setSelectedCategory] = useState("")
-  const [totalProducts,setTotalProducts] = useState(0)
 
   useEffect(()=>{
     let tempPrdtList:any = []
